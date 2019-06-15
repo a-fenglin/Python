@@ -44,15 +44,32 @@ re 模块
 regex=re.compile(a|b) 编译正则表达式
 
 re.findall 查找所有正则表达式的出现 返回结果为列表类型
+set() 将列表变为集合
 code{
 >>> mystr='ab123e3d3e4fg'
 >>> re.findall('\d+',mystr)
 ['123', '3', '3', '4']
 >>> type(re.findall('\d+',mystr))
 <class 'list'>
+>>> res=re.findall('\d+',mystr)
+>>> set(res)
+{'4', '123', '3'}
 }
 
-
+re.sub(replace)
+code{
+>>> mystr='acd123asd3dd344d3'
+>>> re.sub('\d+','*',mystr)
+'acd*asd*dd*d*'
+>>> re.sub('\d','&',mystr)
+'acd&&&asd&dd&&&d&'
+>>> re.sub('.','*',mystr)
+'*****************'
+>>> re.sub('.*','*',mystr)
+'**'
+>>> re.sub('.*?','*',mystr)
+'***********************************'
+}
 
 
 
