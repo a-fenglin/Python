@@ -1,0 +1,60 @@
+[abc]* : aaa,abc,acc 匹配前面的正则0次或多次
+a? a: 匹配前面的出现的正则0次或1次 
+code{
+>>> import re                               //加载re模块
+>>> re.match('a*','adcdfdf')                 
+<re.Match object; span=(0, 1), match='a'>       //span第0位出现，第1位结束
+>>> re.match('a','aacd')
+<re.Match object; span=(0, 1), match='a'>
+>>> re.match('a*','aaccd')
+<re.Match object; span=(0, 2), match='aa'>      //加*的区别
+>>> res.group()
+'aa'
+}
+
+a|b : 匹配a或者b
+
+^ 匹配开头：^atr  开头是atr就行
+$ 匹配结尾  ^abc$  只匹配abc , ^$  空
+[^A-Z] 除了A-Z都匹配
+
+search 只匹配到第一次，满足一次就停止
+code{
+>>> res='aabd1223'
+>>> show=re.search('d',res)
+>>> show.group()
+'d'
+>>> re.search('d',res)
+<re.Match object; span=(3, 4), match='d'>
+}
+match   只从开头开始匹配，如果开头匹配不成功，就返回
+
++ 前面出现过的正则表达式一次或多次
+code{
+>>> mystr='ab123e3d3e4fg'
+>>> re.findall('\d+',mystr)                 //有+和没+的区别
+['123', '3', '3', '4']
+>>> type(re.findall('\d+',mystr))
+<class 'list'>
+>>> re.findall('\d',mystr)                 //有+和没+的区别
+['1', '2', '3', '3', '3', '4']           
+}
+
+re 模块
+regex=re.compile(a|b) 编译正则表达式
+
+re.findall 查找所有正则表达式的出现 返回结果为列表类型
+code{
+>>> mystr='ab123e3d3e4fg'
+>>> re.findall('\d+',mystr)
+['123', '3', '3', '4']
+>>> type(re.findall('\d+',mystr))
+<class 'list'>
+}
+
+
+
+
+
+
+
