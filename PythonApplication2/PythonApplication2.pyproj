@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b10a320b-ec2c-4c72-af7d-b1a7a958831f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>post表单提交.py</StartupFile>
+    <StartupFile>PythonApplication2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,43 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="cookies.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CTF第一题.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module1.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="xff与Referer伪造.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="代理.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="表单提交得到disabled.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="post表单提交.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="XCTF_WEb_getpost.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module2.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module3.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="PythonApplication2.py" />
-    <Compile Include="全站爬去.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="遍历网址下的目录.py">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
