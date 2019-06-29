@@ -1,0 +1,5 @@
+s = '\xe8\xaf\xb7\xe7\x94'
+ss = s.encode('raw_unicode_escape')
+print(ss)  # 结果：b'\xe9\x9d\x92\xe8\x9b\x99\xe7\x8e\x8b\xe5\xad\x90'
+sss = ss.decode("gbk")
+print(sss)
